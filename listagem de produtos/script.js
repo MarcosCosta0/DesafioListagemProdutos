@@ -11,6 +11,7 @@ let listProduto = JSON.parse(localStorage.getItem("listaProdutos")) ?? [];
 
 
 
+
 // Função para adicionar o objeto ao localStorage
 function salvarProduto() {
     let disponibilidade = document.querySelector('input[name="disponivel"]:checked');
@@ -19,7 +20,7 @@ function salvarProduto() {
         nome: produtoNome.value,
         descricao: descricaoProduto.value,
         valor: valorProduto.value.replace(',', '.'),
-        disponivel: disponibilidade.value === "sim" ? "sim" : "não"
+        disponivel: disponibilidade === "sim" ? "sim" : "não"
     };
 
     listProduto.push(produto);
