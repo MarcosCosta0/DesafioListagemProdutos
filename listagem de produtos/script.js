@@ -19,7 +19,7 @@ function salvarProduto() {
         nome: produtoNome.value,
         descricao: descricaoProduto.value,
         valor: valorProduto.value.replace(',', '.'),
-        disponivel: disponibilidade ? disponibilidade.value : "não"
+        disponivel: disponibilidade.value === "sim" ? "sim" : "não"
     };
 
     listProduto.push(produto);
