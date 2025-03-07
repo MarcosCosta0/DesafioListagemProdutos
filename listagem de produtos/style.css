@@ -40,6 +40,7 @@ form {
     padding: 20px;
     display: none;
     overflow-y: auto;
+    width: 400px;
 
 }
 
@@ -48,6 +49,8 @@ form {
     justify-content: space-between;
     padding: 1em;
     border-bottom: 1px solid;
+    
+    
 
 }
 
