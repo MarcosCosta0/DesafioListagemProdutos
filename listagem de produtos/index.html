@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listagem</title>
+    <title>cadstro de produtos</title>
 </head>
 <body>
-    <div id="cadastro-form">
-        <form action="">
-            <label for="produto-nome">Nome do produto:</label>
-            <input type="text" id="produto-nome" name="produto-nome" required>
+    <div id="form-container">
+        <form action="submit" id="cadastro-form">
+            <label for="produto-name">Nome do produto:</label>
+            <input type="text" id="produto-nome" required>
 
             <label for="descricao-produto">Descrição do produto:</label>
-            <input maxlength="60" type="text" id="descricao-produto" name="descricao-produto" required>
+            <input type="text" id="descricao-produto" maxlength="60" required>
 
             <label for="valor-produto">Valor do produto:</label>
-            <input type="text" id="valor-produto" name="valor-produto" placeholder="0,00" required>
+            <input type="number" id="valor-produto" placeholder="0,00" required>
 
             <fieldset>
                 <legend>Disponível para venda?</legend>
                 <label>
-                    <input type="radio"  name="disponivel" value="sim" required> Sim
+                    <input type="radio" name="disponivel" value="sim" required> Sim
                 </label>
                 <label>
-                    <input type="radio" name="disponivel" value="nao"> Não
+                    <input type="radio" name="disponivel" value="não"> Não
                 </label>
             </fieldset>
 
-            <button id="submit" type="submit">Cadastrar</button>
+            <button id="submimt" type="submit">Cadastrar</button>
+
+
+            
         </form>
     </div>
 
     <div id="lista-container">
-
+       
     </div>
-
 
     <script src="script.js"></script>
 </body>
